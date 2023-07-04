@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4E3131F-C813-476B-88E8-E914790C3551}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\202304101609331_CreateDB.cs" />
+    <Compile Include="Migrations\202304101609331_CreateDB.designer.cs">
+      <DependentUpon>202304101609331_CreateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304120341471_updatedb1.cs" />
+    <Compile Include="Migrations\202304120341471_updatedb1.designer.cs">
+      <DependentUpon>202304120341471_updatedb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304121055576_updatedb2.cs" />
+    <Compile Include="Migrations\202304121055576_updatedb2.designer.cs">
+      <DependentUpon>202304121055576_updatedb2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304141711483_updatedb3.cs" />
+    <Compile Include="Migrations\202304141711483_updatedb3.designer.cs">
+      <DependentUpon>202304141711483_updatedb3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304151704030_updatedb4.cs" />
+    <Compile Include="Migrations\202304151704030_updatedb4.designer.cs">
+      <DependentUpon>202304151704030_updatedb4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304151708528_updatedb5.cs" />
+    <Compile Include="Migrations\202304151708528_updatedb5.designer.cs">
+      <DependentUpon>202304151708528_updatedb5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304160547322_updatedb6.cs" />
+    <Compile Include="Migrations\202304160547322_updatedb6.designer.cs">
+      <DependentUpon>202304160547322_updatedb6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304160556525_updatedb7.cs" />
+    <Compile Include="Migrations\202304160556525_updatedb7.designer.cs">
+      <DependentUpon>202304160556525_updatedb7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304160655335_updatedb8.cs" />
+    <Compile Include="Migrations\202304160655335_updatedb8.designer.cs">
+      <DependentUpon>202304160655335_updatedb8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304161532130_updatedb9.cs" />
+    <Compile Include="Migrations\202304161532130_updatedb9.designer.cs">
+      <DependentUpon>202304161532130_updatedb9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304161553318_updatedb10.cs" />
+    <Compile Include="Migrations\202304161553318_updatedb10.designer.cs">
+      <DependentUpon>202304161553318_updatedb10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304171932176_updatedb11.cs" />
+    <Compile Include="Migrations\202304171932176_updatedb11.designer.cs">
+      <DependentUpon>202304171932176_updatedb11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304171939053_updatedb12.cs" />
+    <Compile Include="Migrations\202304171939053_updatedb12.designer.cs">
+      <DependentUpon>202304171939053_updatedb12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304171952228_updatedb13.cs" />
+    <Compile Include="Migrations\202304171952228_updatedb13.designer.cs">
+      <DependentUpon>202304171952228_updatedb13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304181630139_updatedb14.cs" />
+    <Compile Include="Migrations\202304181630139_updatedb14.designer.cs">
+      <DependentUpon>202304181630139_updatedb14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304182252026_updatedb15.cs" />
+    <Compile Include="Migrations\202304182252026_updatedb15.designer.cs">
+      <DependentUpon>202304182252026_updatedb15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304182253353_updatedb16.cs" />
+    <Compile Include="Migrations\202304182253353_updatedb16.designer.cs">
+      <DependentUpon>202304182253353_updatedb16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304182328379_updatedb17.cs" />
+    <Compile Include="Migrations\202304182328379_updatedb17.designer.cs">
+      <DependentUpon>202304182328379_updatedb17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304190115567_updatedb18.cs" />
+    <Compile Include="Migrations\202304190115567_updatedb18.designer.cs">
+      <DependentUpon>202304190115567_updatedb18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304190209266_updatedb19.cs" />
+    <Compile Include="Migrations\202304190209266_updatedb19.designer.cs">
+      <DependentUpon>202304190209266_updatedb19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304190226108_updatedb20.cs" />
+    <Compile Include="Migrations\202304190226108_updatedb20.designer.cs">
+      <DependentUpon>202304190226108_updatedb20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304190248284_updatedb21.cs" />
+    <Compile Include="Migrations\202304190248284_updatedb21.designer.cs">
+      <DependentUpon>202304190248284_updatedb21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304191533189_updatedb22.cs" />
+    <Compile Include="Migrations\202304191533189_updatedb22.designer.cs">
+      <DependentUpon>202304191533189_updatedb22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304211552572_updatedb23.cs" />
+    <Compile Include="Migrations\202304211552572_updatedb23.designer.cs">
+      <DependentUpon>202304211552572_updatedb23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304211607124_updatedb24.cs" />
+    <Compile Include="Migrations\202304211607124_updatedb24.designer.cs">
+      <DependentUpon>202304211607124_updatedb24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304211614270_updatedb25.cs" />
+    <Compile Include="Migrations\202304211614270_updatedb25.designer.cs">
+      <DependentUpon>202304211614270_updatedb25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304211748187_updatedb26.cs" />
+    <Compile Include="Migrations\202304211748187_updatedb26.designer.cs">
+      <DependentUpon>202304211748187_updatedb26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304230049534_updatedb27.cs" />
+    <Compile Include="Migrations\202304230049534_updatedb27.designer.cs">
+      <DependentUpon>202304230049534_updatedb27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304231919049_updatedb28.cs" />
+    <Compile Include="Migrations\202304231919049_updatedb28.designer.cs">
+      <DependentUpon>202304231919049_updatedb28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304270245350_updatedb29.cs" />
+    <Compile Include="Migrations\202304270245350_updatedb29.designer.cs">
+      <DependentUpon>202304270245350_updatedb29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304270248569_updatedb30.cs" />
+    <Compile Include="Migrations\202304270248569_updatedb30.designer.cs">
+      <DependentUpon>202304270248569_updatedb30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304270422168_updatedb31.cs" />
+    <Compile Include="Migrations\202304270422168_updatedb31.designer.cs">
+      <DependentUpon>202304270422168_updatedb31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304270447315_updatedb32.cs" />
+    <Compile Include="Migrations\202304270447315_updatedb32.designer.cs">
+      <DependentUpon>202304270447315_updatedb32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304270522305_updatedb33.cs" />
+    <Compile Include="Migrations\202304270522305_updatedb33.designer.cs">
+      <DependentUpon>202304270522305_updatedb33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305030948291_updatedb34.cs" />
+    <Compile Include="Migrations\202305030948291_updatedb34.designer.cs">
+      <DependentUpon>202305030948291_updatedb34.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305031302525_updatedb35.cs" />
+    <Compile Include="Migrations\202305031302525_updatedb35.designer.cs">
+      <DependentUpon>202305031302525_updatedb35.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305092017255_updatedb36.cs" />
+    <Compile Include="Migrations\202305092017255_updatedb36.designer.cs">
+      <DependentUpon>202305092017255_updatedb36.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305101726304_updatedb37.cs" />
+    <Compile Include="Migrations\202305101726304_updatedb37.designer.cs">
+      <DependentUpon>202305101726304_updatedb37.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305101728267_updatedb38.cs" />
+    <Compile Include="Migrations\202305101728267_updatedb38.designer.cs">
+      <DependentUpon>202305101728267_updatedb38.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305130926137_updatedb39.cs" />
+    <Compile Include="Migrations\202305130926137_updatedb39.designer.cs">
+      <DependentUpon>202305130926137_updatedb39.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305291732320_updatedb40.cs" />
+    <Compile Include="Migrations\202305291732320_updatedb40.designer.cs">
+      <DependentUpon>202305291732320_updatedb40.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306081514518_updatedb41.cs" />
+    <Compile Include="Migrations\202306081514518_updatedb41.designer.cs">
+      <DependentUpon>202306081514518_updatedb41.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QLNETDBContextSingleton.cs" />
+    <Compile Include="QLNETDBContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202304101609331_CreateDB.resx">
+      <DependentUpon>202304101609331_CreateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304120341471_updatedb1.resx">
+      <DependentUpon>202304120341471_updatedb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304121055576_updatedb2.resx">
+      <DependentUpon>202304121055576_updatedb2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304141711483_updatedb3.resx">
+      <DependentUpon>202304141711483_updatedb3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304151704030_updatedb4.resx">
+      <DependentUpon>202304151704030_updatedb4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304151708528_updatedb5.resx">
+      <DependentUpon>202304151708528_updatedb5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304160547322_updatedb6.resx">
+      <DependentUpon>202304160547322_updatedb6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304160556525_updatedb7.resx">
+      <DependentUpon>202304160556525_updatedb7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304160655335_updatedb8.resx">
+      <DependentUpon>202304160655335_updatedb8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304161532130_updatedb9.resx">
+      <DependentUpon>202304161532130_updatedb9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304161553318_updatedb10.resx">
+      <DependentUpon>202304161553318_updatedb10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304171932176_updatedb11.resx">
+      <DependentUpon>202304171932176_updatedb11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304171939053_updatedb12.resx">
+      <DependentUpon>202304171939053_updatedb12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304171952228_updatedb13.resx">
+      <DependentUpon>202304171952228_updatedb13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304181630139_updatedb14.resx">
+      <DependentUpon>202304181630139_updatedb14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304182252026_updatedb15.resx">
+      <DependentUpon>202304182252026_updatedb15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304182253353_updatedb16.resx">
+      <DependentUpon>202304182253353_updatedb16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304182328379_updatedb17.resx">
+      <DependentUpon>202304182328379_updatedb17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304190115567_updatedb18.resx">
+      <DependentUpon>202304190115567_updatedb18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304190209266_updatedb19.resx">
+      <DependentUpon>202304190209266_updatedb19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304190226108_updatedb20.resx">
+      <DependentUpon>202304190226108_updatedb20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304190248284_updatedb21.resx">
+      <DependentUpon>202304190248284_updatedb21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304191533189_updatedb22.resx">
+      <DependentUpon>202304191533189_updatedb22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211552572_updatedb23.resx">
+      <DependentUpon>202304211552572_updatedb23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211607124_updatedb24.resx">
+      <DependentUpon>202304211607124_updatedb24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211614270_updatedb25.resx">
+      <DependentUpon>202304211614270_updatedb25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211748187_updatedb26.resx">
+      <DependentUpon>202304211748187_updatedb26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304230049534_updatedb27.resx">
+      <DependentUpon>202304230049534_updatedb27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304231919049_updatedb28.resx">
+      <DependentUpon>202304231919049_updatedb28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304270245350_updatedb29.resx">
+      <DependentUpon>202304270245350_updatedb29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304270248569_updatedb30.resx">
+      <DependentUpon>202304270248569_updatedb30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304270422168_updatedb31.resx">
+      <DependentUpon>202304270422168_updatedb31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304270447315_updatedb32.resx">
+      <DependentUpon>202304270447315_updatedb32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304270522305_updatedb33.resx">
+      <DependentUpon>202304270522305_updatedb33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305030948291_updatedb34.resx">
+      <DependentUpon>202305030948291_updatedb34.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305031302525_updatedb35.resx">
+      <DependentUpon>202305031302525_updatedb35.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305092017255_updatedb36.resx">
+      <DependentUpon>202305092017255_updatedb36.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305101726304_updatedb37.resx">
+      <DependentUpon>202305101726304_updatedb37.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305101728267_updatedb38.resx">
+      <DependentUpon>202305101728267_updatedb38.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305130926137_updatedb39.resx">
+      <DependentUpon>202305130926137_updatedb39.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305291732320_updatedb40.resx">
+      <DependentUpon>202305291732320_updatedb40.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306081514518_updatedb41.resx">
+      <DependentUpon>202306081514518_updatedb41.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{064bd462-197d-4e0d-a095-ef3e41b6edbc}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
